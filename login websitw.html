@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(./backrooooooo.webp);
+            font-family: Arial, Helvetica, sans-serif;
+            background-repeat: no-repeat;
+            
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15%;
+            font-size: 40px;
+            background-size: cover;
+        }
+        .input{
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid blueviolet;
+        }
+        input[type="submit"]:hover{
+            background-color: aquamarine;
+            transform: scale(3.5);
+        }
+    </style>
+</head>
+<body>
+    
+   <form onsubmit="data()" action="Home.html">
+    UserID:<br>
+    <input type="text" id="n1"><br>
+    Mobile Number:<br>
+    <input type="number" id="n2"><br>
+    Password<br>
+    <input type="password" id="n3"><br>
+    Confirm Password:<br>
+    <input type="password" id="n4"><br>
+    <input type="submit" value="Submit Now">
+    </form>
+<script>
+function data()
+{
+    var a=document.getElementById("n1").value;
+    var b=document.getElementById("n2").value;
+    var c=document.getElementById("n3").value;
+    var d=document.getElementById("n4").value;
+
+    //
+    if(a=="" || b=="" || c=="" || d=="")
+    {
+        alert("all feild are mandatory")
+        return false;
+    }
+    else{
+true;
+    }    
+    }
+
+</script>
+</body>
+</html>

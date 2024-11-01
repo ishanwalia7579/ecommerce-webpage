@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>dumbbell</title>
+    <style>
+     /* nav bar */
+     .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 10px;
+    }
+        /* .navbar ul */
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        /* navbar li */
+        .navbar li {
+            margin-right: 20px;
+        }
+        /* navbar li a */
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+    }
+    /* navbar li a:hover */
+    .navbar li a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    /* nav button */
+    .nav-buttons {
+        display: flex;
+    }
+    /* nav buttons button */
+    .nav-buttons button {
+        margin-left: 10px;
+        padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        /* login */
+        .login {
+            background-color: #4CAF50; /* Green */
+            color: white;
+        }
+        /* payment */
+        .payment {
+            background-color: #f44336; /* Red */
+            color: white;
+        }
+        /* nav button button hover */
+        .nav-buttons button:hover {
+            opacity: 0.8;
+        }
+        /* ul */
+        ul{
+            list-style: none;  
+            background-color: black;
+            }
+            /* ul li */
+            ul li{
+                display: inline-block;
+                position: relative;
+            }
+            /* ul li a */
+            ul li a{
+                display: block;
+                padding:20px 25px ;
+                color: red;
+                text-decoration: none;
+                text-align: center;
+                font-size: 20px;
+            }
+            /* ul li ul.dropdown */
+            ul li ul.dropdown li{
+                display: block;
+            }
+            /* ul li ul.dropdown */
+            ul li ul.dropdown {
+                width: 100%;
+                background:green;
+                position: absolute;
+                z-index: 999;
+                display: none;
+            }
+            /*ul li a:hove  */
+            ul li a:hover{
+            background-color: green; 
+            } 
+            /* ul li:hover ul.dropdown */
+            ul li:hover ul.dropdown{
+                display: block;
+            }
+        /* dumbbell-product */
+        .dumbbell-product {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        /* dumbbell-Box */
+        .dumbbell-Box {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        /* dumbbell-Box image */
+        .dumbbell-Box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        /* active  */
+.active{
+    background-color: red;
+    padding: 10px;
+}
+/* checked */
+.checked{
+    color: red;
+}
+.p1{
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <!-- nav bar -->
+     <nav class="navbar">
+        <!-- p -->
+        <p class="p1">Mini store</p>
+        <!-- ul -->
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li>
+                <a href="#">Product</a>
+                <ul class="dropdown">
+                    <li><a href="Tshirts.html">Tshirts</a></li>
+                    <li><a href="Shoes.html">Shoes</a></li>
+                    <li><a href="headphone.html">Headphones</a></li>
+                    <li><a href="kabaddi jersey.html">kabaddi jersey</a></li>
+                    <li><a href="kabaddi shoes .html">kabaddi shoes</a></li>
+                    <li><a href="Protein.html">Protein</a></li>
+                    <li><a href="dumbbell.html" class="active">Dumbbell</a></li>
+                    <li><a href="laptop.html">laptop</a></li>
+                    <li><a href="phone.html">phone</a></li>
+                    <li><a href="Jacket.html">Jacket</a></li>
+                    <li><a href="jeans.html">Jeans</a></li>
+                </ul>
+                
+            </li>
+            
+        
+        </ul>
+        
+        <div class="nav-buttons">
+            <button class="login"><a href="Login.html">Login</a></button>
+            <button class="payment"><a href="payment.html">Payment</a></button>
+        </div>
+    </nav>
+    <!-- /div -->
+<!-- /nav -->
+
+    <!-- Div start -->
+    <div class="dumbbell-product">
+
+        <!-- Div 1 -->
+        <div class="dumbbell-Box">
+            <img src="dumbbell1.jpg" alt="Product 1">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star"></span>
+            <p>Kg:-2.5 + 2.5 = 5kg</p>
+            <p>Price:- ₹850</p>
+            <button><a href="payment.html">Buy Now</a></button>
+        </div>
+
+        <!-- Div 2-->
+        <div class="dumbbell-Box">
+            <img src="dumbbell2.jpg" alt="Product 2">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star"></span>
+            <p>Kg:-3.5 + 3.5 = 7kg</p>
+            <p>Price:- ₹1200</p>
+            <button><a href="payment.html">Buy Now</a></button>
+        </div>
+
+        <!-- Div 3 -->
+        <div class="dumbbell-Box">
+            <img src="dumbbell3.jpg" alt="Product 3">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star"></span>
+            <p>Kg:- 2.5 +2.5=5kg</p>
+            <p>Price:-₹800</p>
+            <button><a href="payment.html">Buy Now</a></button>
+        </div>
+
+        <!-- Div 4 -->
+        <div class="dumbbell-Box">
+            <img src="dumbbell4.jpg" alt="Product 4">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star"></span>
+            <p>Kg:-7.5 + 7.5 = 15kg</p>
+            <p>Price:- ₹3500</p>
+            <button><a href="payment.html">Buy Now</a></button>
+        </div>
+
+        <!-- Div 5 -->
+        <div class="dumbbell-Box">
+            <img src="dumbbell5.jpg" alt="Product 5">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star"></span>
+            <p>Kg:-4.5 + 4.5 = 9kg</p>
+            <p>Price:- ₹2500</p>
+            <button><a href="payment.html">Buy Now</a></button>
+        </div>
+
+        <!-- Div 6 -->
+        <div class="dumbbell-Box">
+            <img src="dumbbell6.jpg" alt="Product 6">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star"></span>
+            <p>Kg:15 Full set</p>
+            <p>Price:- ₹5000</p>
+            <button><a href="payment.html">Buy Now</a></button>
+        </div>
+
+        <!-- Div 7 -->
+        <div class="dumbbell-Box">
+            <img src="dumbbell7.jpg" alt="Product 7">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star"></span>
+            <p>Kg:-12.5 + 12.5 = 25kg</p>
+            <p>Price:- ₹2500</p>
+            <button><a href="payment.html">Buy Now</a></button>
+        </div>
+
+        <!-- Div 8 -->
+        <div class="dumbbell-Box">
+            <img src="dumbbell8.jpg" alt="Product 8">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked "></span>
+            <span class="fa fa-star"></span>
+            <p>Kg:-7.5 + 7.5 = 15kg</p>
+            <p>Price:- ₹850</p>
+            <button><a href="payment.html">Buy Now</a></button>
+        </div>
+
+        <!-- Div 9 -->
+        <div class="dumbbell-Box">
+            <img src="dumbbell9.jpg" alt="Product 9">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked "></span>
+            <span class="fa fa-star checked"></span>
+            <p>Kg:-25 + 25 = 50kg</p>
+            <p>Price:- ₹9000</p>
+            <button><a href="payment.html">Buy Now</a></button>
+        </div>
+
+        <!-- Div 10 -->
+        <div class="dumbbell-Box">
+            <img src="dumbbell10.jpg" alt="Product 10">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star"></span>
+            <p>Kg:-2 + 2 = 4kg</p>
+            <p>Price:- ₹750</p>
+            <button><a href="payment.html">Buy Now</a></button>
+        </div>
+
+        <!-- Add other div -->
+    </div>
+</body>
+</html>
